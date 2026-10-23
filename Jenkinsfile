@@ -19,13 +19,13 @@ pipeline {
 
         stage('Check Python') {
             steps {
-                bat 'python --version'
+                bat '"C:\\Users\\jitin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" --version'
             }
         }
 
         stage('Run Automated Tests') {
             steps {
-                bat 'python -m unittest -v test_form.py'
+                bat '"C:\\Users\\jitin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m unittest -v test_form.py'
             }
         }
     }
